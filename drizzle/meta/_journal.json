@@ -1,0 +1,13 @@
+{
+  "version": "7",
+  "dialect": "sqlite",
+  "entries": [
+    {
+      "idx": 0,
+      "version": "6",
+      "when": 1768391406644,
+      "tag": "0000_nifty_wrecking_crew",
+      "breakpoints": true
+    }
+  ]
+}

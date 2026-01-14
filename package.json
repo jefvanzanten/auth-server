@@ -1,0 +1,29 @@
+{
+  "name": "auth-server",
+  "version": "1.0.0",
+  "module": "src/index.ts",
+  "type": "module",
+  "private": true,
+  "scripts": {
+    "dev": "bun run --watch src/index.ts",
+    "start": "bun run src/index.ts",
+    "db:generate": "drizzle-kit generate",
+    "db:migrate": "drizzle-kit migrate",
+    "db:push": "drizzle-kit push",
+    "db:studio": "drizzle-kit studio",
+    "seed": "bun run scripts/seed.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "^1.3.6",
+    "drizzle-kit": "^0.31.8"
+  },
+  "peerDependencies": {
+    "typescript": "^5"
+  },
+  "dependencies": {
+    "@better-auth/cli": "^1.4.12",
+    "better-auth": "^1.4.12",
+    "drizzle-orm": "^0.45.1",
+    "hono": "^4.11.4"
+  }
+}
